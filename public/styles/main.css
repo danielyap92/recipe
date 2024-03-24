@@ -1,4 +1,4 @@
-/* Reset default styles */
+
 body, h1, h2, ul, li {
     margin: 0;
     padding: 0;
@@ -7,19 +7,32 @@ body, h1, h2, ul, li {
 body {
     background-color: #6bdbae;
     background-image: url("/image/wild-flowers.png");
+    text-align: center;
+}
 
+table {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .title{
     font-size: 3rem;
 }
 
-/* Header styles */
+
 header {
     background-color: #0fc280;
     padding: 20px;
     text-align: center;
 }
+
+footer {
+    background-color: #0fc280;
+    padding: 20px;
+    text-align: center;
+    margin-top: 200px;
+}
+
 h1 {
     font-size: 24px;
     color: #333;
@@ -40,6 +53,7 @@ nav a {
     width: 80%;
     padding-left: 10%;
     padding-top: 2%;
+    padding-bottom: 20px;
 }
 
 
@@ -47,14 +61,9 @@ h2 {
     font-size: 20px;
     margin-bottom: 10px;
 }
-/* Add styles for recipe cards */
 
-/* Add any other styles you'd like */
-
-/* Responsive styles (optional) */
-@media screen and (max-width: 768px) {
-    /* Adjust styles for smaller screens */
-}
+/* @media screen and (max-width: 768px) {
+} */
 
 .food-image{
     width:100%;
@@ -64,4 +73,14 @@ h2 {
 .photo-video {
     display: flex;
     justify-content: center;
+}
+
+table tr th, table tr td {
+    width: 200px;
+}
+
+#instruction {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }

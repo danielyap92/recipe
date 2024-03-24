@@ -14,11 +14,11 @@
       src="https://www.youtube.com/embed/<%= ytlink %>"
       frameborder="0" ></iframe>
 </div>
-<p>Instruction <%= instruction %></p>
+<br />
 <table>
       <tr>
-            <th style="text-align: left;">Ingredients</th>
-            <th style="text-align: left;">Measures</th>
+            <th>Ingredients</th>
+            <th>Measures</th>
       </tr>
       <tr>
             <td><%= ing1 %></td>
@@ -101,6 +101,11 @@
             <td><%= mrs20 %></td>
       </tr>
 </table>
+
+<div id="instruction">
+      <h3>Instruction: </h3>
+      <p><%= instruction %></p>
+</div>
 
 <a href="<%= source %>">Click here for source</a>
 </div>
