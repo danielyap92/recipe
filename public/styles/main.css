@@ -1,0 +1,67 @@
+/* Reset default styles */
+body, h1, h2, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #6bdbae;
+    background-image: url("/image/wild-flowers.png");
+
+}
+
+.title{
+    font-size: 3rem;
+}
+
+/* Header styles */
+header {
+    background-color: #0fc280;
+    padding: 20px;
+    text-align: center;
+}
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+nav ul {
+    list-style: none;
+}
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+nav a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.content {
+    width: 80%;
+    padding-left: 10%;
+    padding-top: 2%;
+}
+
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+/* Add styles for recipe cards */
+
+/* Add any other styles you'd like */
+
+/* Responsive styles (optional) */
+@media screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+}
+
+.food-image{
+    width:100%;
+    max-width:640px;
+}
+
+.photo-video {
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,107 @@
+<%- include("partials/header.ejs") %>
+<div class="featured-recipes">
+
+
+<h1><%=recipeName%></h1>
+<h3>Category :<%= recipeCategory %></h3>
+<h3>Meal Origin :<%= recipeArea %></h3>
+<div class="photo-video">
+      <img src="<%= picture %>" alt="recipe picture" class="food-image">
+</div>
+<br />
+<div class="photo-video">
+      <iframe id="ytplayer" type="text/html" width="640" height="360"
+      src="https://www.youtube.com/embed/<%= ytlink %>"
+      frameborder="0" ></iframe>
+</div>
+<p>Instruction <%= instruction %></p>
+<table>
+      <tr>
+            <th style="text-align: left;">Ingredients</th>
+            <th style="text-align: left;">Measures</th>
+      </tr>
+      <tr>
+            <td><%= ing1 %></td>
+            <td><%= mrs1 %></td>
+      </tr>
+      <tr>
+            <td><%= ing2 %></td>
+            <td><%= mrs2 %></td>
+      </tr>
+      <tr>
+            <td><%= ing3 %></td>
+            <td><%= mrs3 %></td>
+      </tr>
+      <tr>
+            <td><%= ing4 %></td>
+            <td><%= mrs4 %></td>
+      </tr>
+      <tr>
+            <td><%= ing5 %></td>
+            <td><%= mrs5 %></td>
+      </tr>
+      <tr>
+            <td><%= ing6 %></td>
+            <td><%= mrs6 %></td>
+      </tr>
+      <tr>
+            <td><%= ing7 %></td>
+            <td><%= mrs7 %></td>
+      </tr>
+      <tr>
+            <td><%= ing8 %></td>
+            <td><%= mrs8 %></td>
+      </tr>
+      <tr>
+            <td><%= ing9 %></td>
+            <td><%= mrs9 %></td>
+      </tr>
+      <tr>
+            <td><%= ing10 %></td>
+            <td><%= mrs10 %></td>
+      </tr>
+      <tr>
+            <td><%= ing11 %></td>
+            <td><%= mrs11 %></td>
+      </tr>
+      <tr>
+            <td><%= ing12 %></td>
+            <td><%= mrs12 %></td>
+      </tr>
+      <tr>
+            <td><%= ing13 %></td>
+            <td><%= mrs13 %></td>
+      </tr>
+      <tr>
+            <td><%= ing14 %></td>
+            <td><%= mrs14 %></td>
+      </tr>
+      <tr>
+            <td><%= ing15 %></td>
+            <td><%= mrs15 %></td>
+      </tr>
+      <tr>
+            <td><%= ing16 %></td>
+            <td><%= mrs16 %></td>
+      </tr>
+      <tr>
+            <td><%= ing17 %></td>
+            <td><%= mrs17 %></td>
+      </tr>
+      <tr>
+            <td><%= ing18 %></td>
+            <td><%= mrs18 %></td>
+      </tr>
+      <tr>
+            <td><%= ing19 %></td>
+            <td><%= mrs19 %></td>
+      </tr>
+      <tr>
+            <td><%= ing20 %></td>
+            <td><%= mrs20 %></td>
+      </tr>
+</table>
+
+<a href="<%= source %>">Click here for source</a>
+</div>
+<%- include("partials/footer.ejs") %>
