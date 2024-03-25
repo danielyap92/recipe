@@ -1,0 +1,15 @@
+<%- include("partials/header.ejs") %>
+
+<% if (locals.category) { %>
+    <% for (let x of category){%>
+
+
+      <a href="https://www.themealdb.com/api/json/v1/1/filter.php?c=<%=x%>"><%=x%></a>
+        <br />
+        <br />
+
+  <% };} else {%>
+    <p>No record found!</p>
+    <% } %>
+
+<%- include("partials/footer.ejs") %>

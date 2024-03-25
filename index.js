@@ -31,7 +31,7 @@ app.get("/random-recipe", async (req, res) => {
     const result = response.data.meals[0];
     const YoutubeLink = result.strYoutube.slice(32);
 
-    res.render("rdrecipe.ejs", { 
+    res.render("recipe.ejs", { 
       recipeName:result.strMeal,
       recipeCategory:result.strCategory,
       recipeArea:result.strArea,
@@ -62,10 +62,35 @@ app.get("/random-recipe", async (req, res) => {
      });
   } catch (error) {
     console.error("Failed to make request:", error.message);
-    res.render("rdrecipe.ejs", {
+    res.render("recipe.ejs", {
       error: error.message,
     });
   }
+});
+
+app.get("/random-category", async (req, res) => {
+  
+  let category = [];
+
+  try {
+    const response = await axios.get("https://www.themealdb.com/api/json/v1/1/list.php?c=list");
+    const result = response.data.meals;
+    result.forEach((x) => {
+      category.push(Object.values(x));
+    });
+    res.render("category.ejs", { category: category });
+  } catch (error) {
+    console.error("Failed to make request:", error.message);
+    res.render("category.ejs", {
+      error: error.message,
+    });
+  }
+
+  // const response = await axios.get("https://www.themealdb.com/api/json/v1/1/list.php?c=list");
+  // const result = response.data.meals;
+  // console.log(result);
+  // res.render("index.ejs");
+
 });
 
 app.listen(port, () => {
