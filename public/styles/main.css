@@ -1,13 +1,11 @@
-
-body, h1, h2, ul, li {
-    margin: 0;
-    padding: 0;
-}
-
 body {
     background-color: #6bdbae;
     background-image: url("/image/wild-flowers.png");
     text-align: center;
+    font-family: "Kalam", cursive;
+    font-weight: 500;
+    font-style: normal;
+    font-size: large;
 }
 
 table {
@@ -30,13 +28,8 @@ footer {
     background-color: #0fc280;
     padding: 20px;
     text-align: center;
-    margin-top: 200px;
 }
 
-h1 {
-    font-size: 24px;
-    color: #333;
-}
 nav ul {
     list-style: none;
 }
@@ -51,16 +44,12 @@ nav a {
 
 .content {
     width: 80%;
-    padding-left: 10%;
+    margin-left: 10%;
     padding-top: 2%;
-    padding-bottom: 20px;
+    min-height: 100vh;
+    margin-bottom: 20px;
 }
 
-
-h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
 
 /* @media screen and (max-width: 768px) {
 } */
@@ -91,16 +80,16 @@ table tr th, table tr td {
 }
 
 .meal-button{
-    width: 180px;
-    font-size: 1rem;
+    width: 200px;
+    font-size: 0.8rem;
     margin: 10px;
 }
 
 .meal-select{
     display: inline-block;
-    width: 350px;
+    width: 320px;
     height: 350px;
-    background-color: aqua;
+    background-color: #58A399;
     vertical-align: top;
     margin: 10px;
     padding-top: 10px;
@@ -115,4 +104,9 @@ table tr th, table tr td {
 .error-image{
     width: 650px;
     padding-top: 10px;
+}
+
+.category-select {
+    display: inline-block; 
+    margin: 20px;
 }

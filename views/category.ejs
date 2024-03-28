@@ -3,13 +3,13 @@
 <% if (locals.category) { %>
     <% for (let x of category){%>
 
-
+      <div class="category-select">
       <form action="/submit-category" method="POST">
-        <button type="submit" class="category-button"><%=x.strCategory%></button>
+        <button type="submit" class="btn btn-info category-button"><%=x.strCategory%></button>
         <input type="hidden" name="categoryName" id="categoryName" value="<%=x.strCategory%>" >
       </form>
       <br />
-
+    </div>
   <% };} else {%>
     <p>No record found!</p>
     <% } %>

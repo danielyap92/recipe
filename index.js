@@ -12,6 +12,7 @@ app.get("/", async (req, res) => {
   res.render("index.ejs");
 });
 
+// I hide the following because API connection is unstable
 app.get("/random-photo", async (req, res) => {
   try {
     const response = await axios.get("https://foodish-api.com/api");
@@ -68,7 +69,7 @@ app.get("/random-recipe", async (req, res) => {
   }
 });
 
-app.get("/random-category", async (req, res) => {
+app.get("/category", async (req, res) => {
   
   try {
     const response = await axios.get("https://www.themealdb.com/api/json/v1/1/list.php?c=list");
@@ -186,6 +187,10 @@ app.post("/search", async (req, res) => {
     res.render("notfound.ejs");
   }
 })
+
+app.get("/about", (req, res) => {
+  res.render("about.ejs");
+});
 
 app.listen(port, () => {
     console.log(`Server running on port: http://localhost:${port}`);
