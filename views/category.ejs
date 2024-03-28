@@ -4,12 +4,16 @@
     <% for (let x of category){%>
 
 
-      <a href="https://www.themealdb.com/api/json/v1/1/filter.php?c=<%=x%>"><%=x%></a>
-        <br />
-        <br />
+      <form action="/submit-category" method="POST">
+        <button type="submit" class="category-button"><%=x.strCategory%></button>
+        <input type="hidden" name="categoryName" id="categoryName" value="<%=x.strCategory%>" >
+      </form>
+      <br />
 
   <% };} else {%>
     <p>No record found!</p>
     <% } %>
 
 <%- include("partials/footer.ejs") %>
+
+

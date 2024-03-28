@@ -1,0 +1,19 @@
+<%- include("partials/header.ejs") %>
+
+<% if (locals.category) { %>
+    <% for (let x of category){%>
+
+  <div class="meal-select">
+    <img src="<%= x.strMealThumb %>" alt="food image" class="meal-select-photo">
+      <form action="/submit-meal" method="POST">
+        <button type="submit" class="meal-button"><%=x.strMeal%></button>
+        <input type="hidden" name="mealName" id="mealName" value="<%=x.strMeal%>" >
+      </form>
+  </div>
+
+  <% };} else {%>
+    <p>No record found!</p>
+    <% } %>
+
+<%- include("partials/footer.ejs") %>
+

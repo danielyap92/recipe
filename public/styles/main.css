@@ -84,3 +84,35 @@ table tr th, table tr td {
     margin-left: auto;
     margin-right: auto;
 }
+
+.category-button{
+    font-size: 1.5rem;
+    width: 180px;
+}
+
+.meal-button{
+    width: 180px;
+    font-size: 1rem;
+    margin: 10px;
+}
+
+.meal-select{
+    display: inline-block;
+    width: 350px;
+    height: 350px;
+    background-color: aqua;
+    vertical-align: top;
+    margin: 10px;
+    padding-top: 10px;
+}
+
+.meal-select-photo{
+    width: 240px;
+    height: 240px;
+    padding-top: 10px;
+}
+
+.error-image{
+    width: 650px;
+    padding-top: 10px;
+}
