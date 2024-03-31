@@ -12,7 +12,7 @@ app.get("/", async (req, res) => {
   res.render("index.ejs");
 });
 
-// I hide the following because API connection is unstable
+// I hide the following because API connection is sometime unstable
 app.get("/random-photo", async (req, res) => {
   try {
     const response = await axios.get("https://foodish-api.com/api");
